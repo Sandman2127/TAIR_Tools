@@ -1,0 +1,10 @@
+universe = vanilla
+executable = BSmap_hcDMR.bash
+request_cpus = 1
+request_memory = 2000
+getenv = True
+log = ./logs/$(arg1).log
+error = ./err/$(arg1).WG_NS_bw.err
+output = $(arg1).out
+arguments = $(arg1) $(arg2) $(arg3) $(arg4) $(arg5) $(arg6) $(arg7)
+queue arg1 arg2 arg3 arg4 arg5 arg6 arg7 from arglist
